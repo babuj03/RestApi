@@ -12,7 +12,7 @@ PhoneServiceTest used to test the above three methods.
 
 Swagger API Details info
 
-http://localhost:8080/swagger-ui.html#/phone-resource
+http://<<hostname:port>>/swagger-ui.html#/phone-resource
 
 
 API URL info
