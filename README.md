@@ -18,5 +18,7 @@ http://localhost:8080/swagger-ui.html#/phone-resource
 API URL info
 
 /api/v1/phone/{phoneId}
+
 /api/v1/phone/activate/{phoneId}
+
 /api/v1/phone/phone-by-customerId/{customerId}
