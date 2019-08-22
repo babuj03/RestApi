@@ -1,6 +1,6 @@
 # RestApi
 
-Rest api with DB Mocking implemented with below three Operation.
+Rest api with DB Mocking. Here rest Methods
 
 
 1 get all phone numbers
