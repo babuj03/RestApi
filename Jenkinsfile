@@ -5,6 +5,6 @@ stage('SCM Checkout'){
  }
  stage('Compile-Package') {
  
- sh 'mvn package'
+  mvn package
  }
 }
