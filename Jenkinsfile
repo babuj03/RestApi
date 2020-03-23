@@ -5,6 +5,6 @@ stage('SCM Checkout'){
  }
  stage('Compile-Package') {
  
-  bat mvn install
+   bat 'mvn clean install'
  }
 }
