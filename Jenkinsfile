@@ -5,6 +5,6 @@ stage('SCM Checkout'){
  }
  stage('Compile-Package') {
  
-  mvn package
+  bat mvn install
  }
 }
