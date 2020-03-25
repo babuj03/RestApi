@@ -2,9 +2,6 @@ pipeline {
 
   agent any
   
-  environment {
-       env.PATH = env.PATH + ";c:\\Windows\\System32;C:\\Users\\ukx4661\\AppData\\Local\\Programs\\Git\\usr\\bin"
-   }
   
   stages{
               stage('SCM Checkout'){
@@ -25,7 +22,7 @@ pipeline {
                   
                      sshagent(['EC2-SSH']) {
                           
-                          sh  'scp  -o StrictHostKeyChecking=no target/PhoneRestApi-0.0.1-SNAPSHOT.jar   ec2-user@13.233.83.113:/opt/tomcat8/webapps/'
+                          bat 'scp  -o StrictHostKeyChecking=no target/PhoneRestApi-0.0.1-SNAPSHOT.jar   ec2-user@13.233.83.113:/opt/tomcat8/webapps/'
                        
                      }
                   }
