@@ -2,7 +2,7 @@ pipeline {
 
   agent any
   environment{
-     PATH='%PATH%;C:\Users\ukx4661\AppData\Local\Programs\Git\usr\bin\ssh-agent.exe'
+     PATH='%PATH%;C:/Users/ukx4661/AppData/Local/Programs/Git/usr/bin/ssh-agent.exe'
   }
   stages{
               stage('SCM Checkout'){
