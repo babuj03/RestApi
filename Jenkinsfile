@@ -19,7 +19,7 @@ pipeline {
                   
                   
                      sshagent(['EC2-SSH']) {
-                          bat 'C:/Users/ukx4661/AppData/Local/Programs/Git/cmd/start-ssh-agent.cmd'
+                          sh 'C:\Users\ukx4661\AppData\Local\Programs\Git\usr\bin\ssh-agent.exe'
                          
                        
                      }
