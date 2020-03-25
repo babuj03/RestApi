@@ -2,7 +2,7 @@ pipeline {
 
   agent any
   environment{
-     PATH="%PATH%;C:/Users/ukx4661/AppData/Local/Programs/Git/usr/bin"
+    
   }
   stages{
               stage('SCM Checkout'){
@@ -18,7 +18,7 @@ pipeline {
     
           stage('Deploy to Tomcat') {
                 steps {
-                  
+                   PATH="%PATH%;C:/Users/ukx4661/AppData/Local/Programs/Git/usr/bin"
                   
                      sshagent(['EC2-SSH']) {
                           
