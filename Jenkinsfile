@@ -1,6 +1,11 @@
 pipeline {
 
   agent any
+  
+  environment {
+       env.PATH = env.PATH + ";c:\\Windows\\System32;C:\\Users\\ukx4661\\AppData\\Local\\Programs\\Git\\usr\\bin"
+   }
+  
   stages{
               stage('SCM Checkout'){
                   steps {
