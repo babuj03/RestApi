@@ -14,7 +14,7 @@ pipeline {
            }
     
           stage('Deploy to Tomcat') {
-             PATH="%PATH%;C:/Users/ukx4661/AppData/Local/Programs/Git/usr/bin"
+           
                 steps {
                   
                   
