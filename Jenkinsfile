@@ -18,7 +18,7 @@ pipeline {
                 steps {
                   
                   
-                      sshagent(['tomcat-Auth']) {
+                     sshagent(['EC2-SSH']) {
                           sh  'scp -o StrictHostKeyChecking=no target/PhoneRestApi-0.0.1-SNAPSHOT.jar   ec2-user@13.233.83.113:/opt/tomcat8/webapps/'
                        
                      }
